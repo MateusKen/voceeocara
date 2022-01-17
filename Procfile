@@ -1,1 +1,1 @@
-worker: python3 voceeocara.py.py
+worker: python3 voceeocara.py
