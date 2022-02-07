@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 TOKEN = os.getenv('token')
 client = discord.Client()
-
+kawa=378979413255258132
 @client.event
 async def on_ready():
   print('We have logged in as {0,user}'.format(client))
@@ -15,7 +15,7 @@ async def on_message(message):
   if message.author ==  client.user:
     return
   if message.content.startswith('kawa'):
-    await message.channel.send('você é o cara!')
+    await message.channel.send('@',kawa,'você é o cara!')
 
 client.run(TOKEN)
 
