@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = os.getenv('token')
+TOKEN = os.getenv('TOKEN')
 client = discord.Client()
 
 @client.event
@@ -15,7 +15,7 @@ async def on_message(message):
   if message.author ==  client.user:
     return
   if message.content.startswith('kawa'):
-    await message.channel.send('<@378979413255258132>','você é o cara!')
+    await message.channel.send('<@378979413255258132>, você é o cara!')
 
 client.run(TOKEN)
 
