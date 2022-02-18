@@ -15,7 +15,7 @@ async def on_message(message):
   if message.author ==  client.user:
     return
   if message.content.startswith('kawa'):
-    await message.channel.send('/tts <@378979413255258132>, você é o cara!')
+    await message.channel.send('/tts <@378979413255258132>, você é o cara!', tts=True)
 
 client.run(TOKEN)
 
